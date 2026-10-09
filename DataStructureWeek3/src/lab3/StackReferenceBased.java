@@ -1,4 +1,9 @@
 package lab3;
+
+import lab3.Node;
+
+//import lab2.Node;
+
 public class StackReferenceBased implements StackInterface
 {
   private Node top;
@@ -67,5 +72,36 @@ public class StackReferenceBased implements StackInterface
 //============================================================================
 //============================================================================
 //============================================================================
+  
+  public void displayStack() {
+	  if(isEmpty()) {
+		  System.out.println("Stack is empty");
+	  }
+	  
+	  //Node curr = top;
+	  System.out.println("<-- Bottom");
+		 for(Node curr = top; curr != null; curr = curr.getNext()) {
+			 System.out.println(curr.getItem());
+			 
+		 }
+		 System.out.println("<-- Top");
+	  /*
+	  System.out.println("Bottom");
+	  while(top != null) {
+		  System.out.println(top.getItem());
+	  }
+		 System.out.println("Top");
+		*/
+	
+	  
+  }
+  
+  
+  
+  
+  public void isBlanced(String s) {
+	  StackReferenceBased stack = new StackReferenceBased();
+	  
+  }
 
 }  // end StackReferenceBased
