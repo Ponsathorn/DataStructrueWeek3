@@ -99,9 +99,6 @@ public class StackReferenceBased implements StackInterface
   
   
   
-  public void isBlanced(String s) {
-	  StackReferenceBased stack = new StackReferenceBased();
-	  
-  }
+
 
 }  // end StackReferenceBased
